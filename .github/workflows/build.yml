@@ -1,3 +1,4 @@
+
 name: build
 on: [push, workflow_dispatch]
 jobs:
@@ -5,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: unzip -q vibeclient.zip
+      - run: unzip -q "vibeclient (1).zip"
       - uses: actions/setup-java@v4
         with: { distribution: temurin, java-version: '25' }
       - uses: gradle/actions/setup-gradle@v4
